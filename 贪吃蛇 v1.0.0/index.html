@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 禁止请求 favicon.ico 的方式：手写base64数据的缩略/完整表达 -->
+  <link rel="icon" href="data:;base64,=">
+  <!-- <link rel="icon" href="data:image/ico;base64,aWNv"> -->
+
+  <title>贪吃蛇</title>
+  <link rel="stylesheet" href="./index.css">
+
+  <script defer src="./index.js"></script>
+</head>
+
+<body>
+  <div class="outer">
+    <div class="inner" id="win"></div>
+    <div class="info">
+      <span>
+        LEVEL:<span id="level">1</span>
+      </span>
+      <span>
+        SCORE:<span id="score">0</span>
+      </span>
+    </div>
+  </div>
+</body>
+
+</html>

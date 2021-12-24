@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>设计模式</title>
+</head>
+
+<body>
+  <script>
+    /* 单例模式：new 创建的实例永远只有一个 */
+    class Game {
+      static instance;
+      constructor() {
+        if (Game.instance) return Game.instance;
+        this.score = 100;
+        Game.instance = this;
+      }
+    }
+
+
+    class A extends Game {
+      nameA = 'A'
+    }
+
+    class B extends Game {
+      nameB = 'B'
+    }
+
+    var a = new A();
+    a.score -= 5;
+    console.log(a.score);
+
+    var b = new B();
+    b.score -= 8;
+    console.log(b.score);
+
+    var game1 = new Game();
+    game1.score -= 10;
+    console.log(game1.score);
+
+    var game2 = new Game();
+    a.score += 2;
+    game2.score += 3;
+    console.log(game2.score);
+
+
+  </script>
+</body>
+
+</html>

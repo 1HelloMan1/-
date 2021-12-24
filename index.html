@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 禁止请求 favicon.ico 的方式：手写base64数据的缩略/完整表达 -->
+  <link rel="icon" href="data:;base64,=">
+  <!-- <link rel="icon" href="data:image/ico;base64,aWNv"> -->
+
+  <title>贪吃蛇</title>
+  <link rel="stylesheet" href="./css/index.css">
+
+  <!-- 以type为module的script标签实现模块化，自带defer属性推迟加载 -->
+  <script type="module" src="./js/index.js"></script>
+</head>
+
+<body>
+  <div class="game">
+    <div class="win" id="win"></div>
+    <div class="info">
+      <div id="level">LEVEL:</div>
+      <div id="score">SCORE:</div>
+    </div>
+  </div>
+</body>
+
+</html>
